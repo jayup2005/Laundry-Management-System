@@ -25,7 +25,7 @@
 
 ## 🖼️ Preview
 
-![Landing Page Screenshot](https://laundry-management-system-dusky.vercel.app/preview.png)  
+![Landing Page Screenshot](https://i.ibb.co/pg8JfPs/Screenshot-2025-07-07-132539.png)  
 *Smart Laundry Management Made Effortless*
 
 ---
