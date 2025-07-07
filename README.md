@@ -1,12 +1,46 @@
-# React + Vite
+# 🧺 LaundryPro – Smart Laundry Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LaundryPro** is a full-stack laundry service platform designed to simplify and digitize the laundry process for users and administrators. With a sleek UI, wallet integration, order tracking, and an admin dashboard, it brings automation to your fingertips.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [https://laundry-management-system-dusky.vercel.app/](https://laundry-management-system-dusky.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👤 User Side
+- 🔐 **Login/Signup with JWT Authentication**
+- 🧺 **Place Laundry Orders** – Select items, place orders
+- 💸 **Wallet Integration** – Price is automatically deducted from the user's balance
+- 📄 **Order History** – Users can track past and current laundry orders
+- 🔄 **Live Order Status** – View status: pending or processing
+
+### 🛠️ Admin Side
+- 🔐 **Secure Admin Login**
+- 📋 **Order Overview** – See all orders from all users
+- 🔄 **Manage Order Status** – Update status to *pending*, *processing*, or *completed*
+- 📊 **Dashboard** – Overview of system activity and order flow
+
+---
+
+## 🖼️ Preview
+
+![Landing Page Screenshot](https://laundry-management-system-dusky.vercel.app/preview.png)  
+*Smart Laundry Management Made Effortless*
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend:
+- ⚛️ React + Vite
+- 💨 Tailwind CSS
+- 📦 Axios
+
+### Backend:
+- 🟢 Node.js + Express
+- 🔐 JWT Auth
+- 🌍 RESTful APIs with CORS
+- 🧠 MongoDB + Mongoose
+
+---
