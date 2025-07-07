@@ -11,7 +11,7 @@ const Login = ({ handleLogin, setShowSignUp, setShowLogin }) => {
     setLoading(true); // Show loading state
 
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch("https://laundry-management-system-1-ik0a.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

@@ -20,7 +20,7 @@ const LaundryDashboard = ({ setIsLoggedIn, handleLogout, currentUserId }) => {
 
     const fetchOrders = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/orders/user/${currentUserId}`);
+        const response = await fetch(`https://laundry-management-system-1-ik0a.onrender.com/orders/user/${currentUserId}`);
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
         }
@@ -34,7 +34,7 @@ const LaundryDashboard = ({ setIsLoggedIn, handleLogout, currentUserId }) => {
 
     const fetchBalance = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/users/${currentUserId}`);
+        const response = await fetch(`https://laundry-management-system-1-ik0a.onrender.com/users/${currentUserId}`);
         if (!response.ok) {
           throw new Error(`Error ${response.status}: ${response.statusText}`);
         }
@@ -72,7 +72,7 @@ const LaundryDashboard = ({ setIsLoggedIn, handleLogout, currentUserId }) => {
 
     try {
       // Place the order
-      const response = await fetch("http://localhost:3000/orders", {
+      const response = await fetch("https://laundry-management-system-1-ik0a.onrender.com/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newOrder),
@@ -84,7 +84,7 @@ const LaundryDashboard = ({ setIsLoggedIn, handleLogout, currentUserId }) => {
 
       // Successfully placed the order, now update the balance
       const newBalance = balance - totalCost;
-      const balanceUpdateResponse = await fetch(`http://localhost:3000/users/update-balance/${currentUserId}`, {
+      const balanceUpdateResponse = await fetch(`https://laundry-management-system-1-ik0a.onrender.com/users/update-balance/${currentUserId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ balance: newBalance }), // Corrected request format

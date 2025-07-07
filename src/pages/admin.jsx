@@ -19,7 +19,7 @@ const AdminDashboard = ({ handleLogout }) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users");
+        const response = await fetch("https://laundry-management-system-1-ik0a.onrender.com/users");
         const data = await response.json();
         if (response.ok) {
           setUsers(data.filter((user) => user.role === "User"));
@@ -39,7 +39,7 @@ const AdminDashboard = ({ handleLogout }) => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:3000/orders");
+        const response = await fetch("https://laundry-management-system-1-ik0a.onrender.com/orders");
         const data = await response.json();
         if (response.ok) {
           setOrders(data);
@@ -56,7 +56,7 @@ const AdminDashboard = ({ handleLogout }) => {
   // Handle order status change
   const handleOrderStatusChange = async (orderId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:3000/orders/${orderId}`, {
+      const response = await fetch(`https://laundry-management-system-1-ik0a.onrender.com/orders/${orderId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus }),
