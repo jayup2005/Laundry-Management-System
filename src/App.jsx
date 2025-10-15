@@ -83,7 +83,7 @@ function Navbar({ setShowLogin, setShowSignUp }) {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
         <div className="flex items-center gap-2">
           <Waves className="h-8 w-8 text-gray-700" />
-          <span className="text-2xl font-extrabold text-gray-900">LaundryPro</span>
+          <span className="text-2xl font-extrabold text-gray-900">Fabric Flow</span>
         </div>
         <div className="flex gap-4">
           <button className="px-5 py-2 text-gray-700 font-medium hover:text-gray-900 transition" onClick={() => { setShowLogin(true); setShowSignUp(false); }}>
